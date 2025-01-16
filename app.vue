@@ -7,23 +7,31 @@
         <Jumbotron />
       </div>
       <div class="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80" 
-          alt="Artisan bread"
-          class="w-full h-full object-cover"
-        />
+        <img
+          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80"
+          alt="Artisan bread" class="w-full h-full object-cover" />
       </div>
     </header>
 
     <!-- Detalles del producto -->
-    <section class="py-16 px-8 bg-zinc-900">
-      <div class="flex justify-center">
+    <section class="py-16 px-8 bg-black">
+      <div class="flex justify-around">
         <div class="flex items-center gap-4">
           <img src="assets/icon_clock.svg" alt="reloj">
           <h1 class="font-bold">Fermentado por 24 horas</h1>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+          <div class="flex items-center gap-4">
+            <img src="assets/icon_clock.svg" alt="reloj">
+            <h1 class="font-bold">Fermentado por 24 horas</h1>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-4">
+            <img src="assets/icon_clock.svg" alt="reloj">
+            <h1 class="font-bold">Fermentado por 24 horas</h1>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -33,15 +41,11 @@
         <h2 class="text-3xl font-bold mb-12 text-center text-amber-500">CUSTOMER FAVOURITES</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Product Cards -->
-          <ProductCard 
-            v-for="product in products" 
-            :key="product.name"
-            :product="product"
-          />
+          <ProductCard v-for="product in products" :key="product.name" :product="product" />
         </div>
       </div>
     </section>
-    
+
   </div>
 </template>
 
